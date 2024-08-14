@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>helping hand</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container{
+            margin: 0 auto;
+            border:1px solid red;
+            padding: 0 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header class="">
+        <div class="container relative">
+            <label for="toggle" class="lg:hidden  w-full block absolute right-0 top-2">
+                <img src="image/menu.png" class="size-10 mb-3 ml-auto" alt="">
+            </label>
+            <input type="checkbox" class="peer hidden" name="" id="toggle">
+            <div class="navbar hidden peer-checked:flex flex-col items-start gap-7 lg:gap-0 py-2 lg:flex lg:flex-row lg:justify-between lg:items-center ">
+                <div class="logo">
+                   <a href=""> <img src="image/Logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul class="flex flex-col lg:flex-row gap-5">
+                        <li><a href="#" class="text-base font-sarif capitalize text-green-600 font-bold">Home</a></li>
+                        <li><a href="#" class="text-base font-sarif font-semibold text-black capitalize hover:text-green-600 transition-all duration-200">About Us</a></li>
+                        <li><a href="#" class="text-base font-sarif font-semibold text-black capitalize hover:text-green-600 transition-all duration-200">Services</a></li>
+                        <li><a href="#" class="text-base font-sarif font-semibold text-black capitalize hover:text-green-600 transition-all duration-200">Teams</a></li>
+                        <li><a href="#" class="text-base font-sarif font-semibold text-black capitalize hover:text-green-600 transition-all duration-200">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="button text-base font-serif font-semibold text-white capitalize flex items-center gap-2 bg-orange-600 rounded-full px-4 py-2 cursor-pointer">
+                    donate
+                    <img src="image/next.png" class="size-4 text-white" alt="">
+                </div>
+            </div>
+            <div class="banner"></div>
+        </div>
+    </header>
 
-   
 </body>
 </html>
