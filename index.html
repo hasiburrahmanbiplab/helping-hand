@@ -10,6 +10,7 @@
             margin: 0 auto;
             padding: 0 10px;
         }
+    
     </style>
 </head>
 <body>
@@ -379,14 +380,19 @@
      </section>
     <!-- answer part end -->
     <!-- newsletter part start -->
-     <section id="newsletter" class="bg-green-800">
+     <section id="newsletter" class="bg-green-800 py-10">
         <div class="container">
-            <div class="newsletter-container grid grid-cols-2">
+            <div class="newsletter-container grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div class="newsletter-text">
-                    <h2 class="text-4xl font-sarif font-bold text-white !leading-snug">Sign up for our <span class="block">Newsletter</span></h2>
-                    <p class="text-base font-sarif font-normal text-white py-2">Stay in the loop with everything you need to know.</p>
+                    <h2 class="text-4xl font-sarif font-bold text-white !leading-snug text-center">Sign up for our <span class="block">Newsletter</span></h2>
+                    <p class="text-base font-sarif font-normal text-white py-2 text-center">Stay in the loop with everything you need to know.</p>
                 </div>
-                <div class="newsletter-email"></div>
+               <div class="email flex justify-center items-center">
+                <div class="email-box flex flex-wrap rounded-full items-center justify-center gap-3">
+                    <input type="email" class="bg-white px-6 py-4 focus-visible:outline-none border-0 text-base font-sarif font-normal text-gray-600 rounded-full" placeholder="Enter your email" name="" id="">
+                    <button class="bg-orange-600 py-4 px-6 rounded-full text-base font-sarif font-normal text-white ">Subscribe</button>
+                </div>
+               </div>
             </div>
         </div>
      </section>
